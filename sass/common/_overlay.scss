@@ -1,0 +1,8 @@
+@mixin overlay {
+  background: linear-gradient(#1c1e53, rgba(28, 30, 83, 0.42));
+  position: absolute;
+  left: -396px;
+  top: 0;
+  z-index: 555;
+  transition: all linear 0.3s;
+}

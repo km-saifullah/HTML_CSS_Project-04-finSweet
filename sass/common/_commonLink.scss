@@ -1,0 +1,13 @@
+@import "./variables";
+@import "../mixins/paragraph";
+
+// Common Link Button Start
+@mixin commonLink {
+  @include paragraph(123px, $medium, 28px);
+  text-transform: capitalize;
+  display: inline-block;
+  i {
+    margin-left: 16px;
+  }
+}
+// Common Link Button End
