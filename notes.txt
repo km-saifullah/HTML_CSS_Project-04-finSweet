@@ -1,0 +1,7 @@
+font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+// Heading
+@include heading(405px, 48px, $semiBold, 64px);
+// Paragraph
+@include paragraph(405px, $regular, 28px);

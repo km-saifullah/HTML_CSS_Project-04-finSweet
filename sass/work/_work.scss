@@ -1,0 +1,52 @@
+@import "../common/variables";
+@import "../mixins/center";
+@import "../mixins/heading";
+@import "../mixins/paragraph";
+
+// Work Start
+#work {
+  background-color: #f4f6fc;
+  padding: 128px 0;
+  .work__wrapper {
+    @include center(unset);
+    column-gap: 142px;
+    .work__heading {
+      width: 405px;
+      h3 {
+        @include heading(405px, 48px, $semiBold, 64px);
+        text-transform: capitalize;
+      }
+      p {
+        @include paragraph(405px, $regular, 28px);
+        padding: 16px 0;
+      }
+      a {
+        @include paragraph(244px, $medium, 32px);
+        color: $blue;
+        font-size: 18px;
+        i {
+          margin-left: 12px;
+        }
+      }
+    }
+    .work__main {
+      @include center(unset);
+      flex-wrap: wrap;
+      row-gap: 48px;
+      width: 656px;
+      margin-right: 77px;
+      .work__main-item {
+        width: 50%;
+        h4 {
+          @include heading(328px, 32px, $medium, 48px);
+          padding-top: 16px;
+        }
+        p {
+          @include paragraph(303px, $regular, 28px);
+          padding-top: 8px;
+        }
+      }
+    }
+  }
+}
+// Work End
