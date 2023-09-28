@@ -1,0 +1,9 @@
+@import "../common/variables";
+@mixin paragraph($width,$fontWeight,$lineHeight){
+    color: $black;
+    width: $width;
+    font-size: $paragraphFontSize;
+    font-weight: $fontWeight;
+    font-family: $fontFamily;
+    line-height: $lineHeight;
+}

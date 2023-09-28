@@ -1,0 +1,10 @@
+@import "../common/variables";
+@mixin navLink {
+  color: $menuLinkColor;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  transition: all linear 0.3s;
+}

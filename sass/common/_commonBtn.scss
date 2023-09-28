@@ -1,0 +1,19 @@
+@import "./variables";
+@mixin commonBtn {
+  a {
+    border-radius: 41px;
+    border: 2px solid rgba(244, 246, 252, 0.2);
+    padding: 16px 48px;
+    color: $white;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    background-color: transparent;
+    &:hover {
+      background-color: #fcd980;
+    }
+  }
+}

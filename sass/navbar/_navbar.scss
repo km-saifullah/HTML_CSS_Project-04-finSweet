@@ -1,0 +1,39 @@
+@import "../common/variables";
+@import "../mixins/center";
+@import "./navlink";
+@import "../common/commonBtn";
+
+// Navbar Start
+#navBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 16px 0;
+  .navBar__wrapper {
+    @include center(space-between);
+    .navBar__menu {
+      @include center(center);
+      column-gap: 48px;
+      .navBar__list {
+        @include center(center);
+        column-gap: 32px;
+        .navBar__list-item {
+          a {
+            @include navLink;
+            &:hover {
+              color: $white;
+            }
+          }
+          &:nth-child(5) a {
+            text-transform: uppercase;
+          }
+        }
+      }
+      .navBar__btn {
+        @include commonBtn;
+      }
+    }
+  }
+}
+// Navbar End

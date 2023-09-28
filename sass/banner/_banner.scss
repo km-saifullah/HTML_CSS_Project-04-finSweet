@@ -1,0 +1,51 @@
+@import "../common/variables";
+@import "../common/commonBtn";
+@import "../mixins/center";
+@import "../mixins/paragraph";
+@import "../mixins/heading";
+
+// Banner Start
+#banner {
+  background-color: $bannerBGColor;
+  padding: 218px 0 128px 0;
+  .banner__wrapper {
+    @include center(unset);
+    column-gap: 60px;
+    .banner__content {
+      width: 582px;
+      h1 {
+        @include heading(582px, 54px, $semiBold, 74px);
+        color: $white;
+      }
+      p {
+        @include paragraph(562px, $medium, 28px);
+        padding: 24px 0 48px 0;
+        color: $white;
+      }
+      .banner__content-btn {
+        a {
+          padding: 16px 56px;
+          background-color: $yellow;
+          border-radius: 41px;
+          color: #1b1c2b;
+          font-size: 18px;
+          font-weight: $semiBold;
+          line-height: 32px;
+          font-family: "Manrope", sans-serif;
+          text-transform: capitalize;
+          &:last-child {
+            color: $white;
+            background-color: transparent;
+            i {
+              margin-left: 16px;
+            }
+          }
+        }
+      }
+    }
+    .banner__img {
+      width: 638px;
+    }
+  }
+}
+// Banner End

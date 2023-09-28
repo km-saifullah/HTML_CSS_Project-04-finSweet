@@ -1,0 +1,10 @@
+@import "../common/variables";
+
+@mixin heading($width, $fontSize, $fontWeight, $lineHeight) {
+  color: $black;
+  width: $width;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  font-family: $fontFamily;
+}
