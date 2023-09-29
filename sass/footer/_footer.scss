@@ -1,0 +1,104 @@
+@import "../common/variables";
+@import "../mixins/center";
+@import "../mixins/heading";
+@import "../mixins/paragraph";
+
+// Footer Start
+#footer {
+  background-color: $bannerBGColor;
+  padding-top: 96px;
+  .footer__wrapper {
+    width: 1060px;
+    @include center(space-between);
+    align-items: unset;
+    .footer__img {
+      p {
+        padding-top: 22px;
+        @include paragraph(399px, $medium, 16px);
+        line-height: 28px;
+        color: $white;
+      }
+    }
+    .footer__info {
+      h2 {
+        @include heading(333px, 48px, $semiBold, 64px);
+        color: $white;
+      }
+      p {
+        @include paragraph(399px, $regular, 16px);
+        line-height: 28px;
+        color: #f4f6fc;
+        padding: 14px 0 28px 0;
+      }
+      .footer__icon {
+        display: flex;
+        align-items: center;
+        column-gap: 27px;
+        i {
+          font-size: 16px;
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .footer__contact {
+    width: 517px;
+    height: 95px;
+    padding: 16px 137px 16px 37px;
+    background-color: $yellow;
+    @include center(unset);
+    column-gap: 30px;
+    .footer__email {
+      h5 {
+        @include heading(108px, 18px, $medium, 32px);
+      }
+      p {
+        @include paragraph(181px, $regular, 16px);
+        line-height: 28px;
+      }
+    }
+    .footer__phone {
+      h5 {
+        @include heading(108px, 18px, $medium, 32px);
+      }
+      p {
+        @include paragraph(181px, $regular, 16px);
+        line-height: 28px;
+      }
+    }
+  }
+  .footer__copyright {
+    padding: 32px 0;
+    background-color: $white;
+
+    .copyright__wrapper {
+      @include center(space-between);
+      .footer__copyright-text {
+        p {
+          @include paragraph(241px, $medium, 16px);
+          line-height: 28px;
+        }
+      }
+      .footer__menu {
+        ul {
+          display: flex;
+          align-items: center;
+          column-gap: 32px;
+          li a {
+            color: $black;
+            font-size: 16px;
+            font-weight: $medium;
+            line-height: 28px;
+            font-family: "Poppins", sans-serif;
+            transition: all linear 0.3s;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Footer End
