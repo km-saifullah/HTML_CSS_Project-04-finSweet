@@ -1,0 +1,52 @@
+@import "../common/variables";
+@import "../mixins/center";
+@import "../mixins/heading";
+@import "../mixins/paragraph";
+
+// Feature Start
+#features {
+  background-color: #f4f6fc;
+  padding: 128px 0;
+  .features__heading {
+    margin: 0 auto;
+    h5 {
+      @include heading(419px, 18px, $medium, 32px);
+      text-align: center;
+      margin: 0 auto;
+    }
+    h2 {
+      @include heading(630px, 48px, $semiBold, 64px);
+      margin: 0 auto;
+      text-align: center;
+      padding: 12px 0 47px 0;
+      text-transform: capitalize;
+    }
+  }
+  .features_wrapper {
+    @include center(unset);
+    flex-wrap: wrap;
+    gap: 24px 32px;
+    .features__item {
+        padding: 58px 32px 48px 48px;
+        background-color: $white;
+        width: 405px;
+      .features__icon {
+        i {
+          width: 32px;
+          height: 32px;
+          color: $blue;
+          font-size: 25px;
+        }
+      }
+      h3 {
+        @include heading(315px, 24px, $medium, 36px);
+        padding: 22px 0 12px 0;
+      }
+      p {
+        @include paragraph(324px, $regular, 16px);
+        line-height: 28px;
+      }
+    }
+  }
+}
+// Feature End
