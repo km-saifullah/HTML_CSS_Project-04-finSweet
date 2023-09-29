@@ -447,4 +447,86 @@ p {
   font-family: "Poppins", sans-serif;
   line-height: 16px;
   line-height: 28px;
+}
+
+#client {
+  background-color: #dce3f8;
+  padding: 128px 0;
+}
+#client .client__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#client .client__wrapper .client__heading {
+  width: 327px;
+}
+#client .client__wrapper .client__heading h2 {
+  color: #282938;
+  width: 327px;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 56px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 16px;
+}
+#client .client__wrapper .client__heading p {
+  color: #282938;
+  width: 327px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 16px;
+  line-height: 28px;
+}
+#client .client__wrapper .client__main {
+  width: 843px;
+}
+#client .client__wrapper .client__main .client__item h3 {
+  color: #282938;
+  width: 843px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 48px;
+}
+#client .client__wrapper .client__main .client__item .client__info {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+}
+#client .client__wrapper .client__main .client__item .client__info .client__avatar {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#client .client__wrapper .client__main .client__item .client__info .client__avatar img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#client .client__wrapper .client__main .client__item .client__info .client__details h4 {
+  color: #282938;
+  width: 183px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  font-family: "Poppins", sans-serif;
+}
+#client .client__wrapper .client__main .client__item .client__info .client__details p {
+  color: #282938;
+  width: 183px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  line-height: 12px;
+  line-height: 28px;
 }/*# sourceMappingURL=style.css.map */
