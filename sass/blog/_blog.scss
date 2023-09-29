@@ -1,0 +1,58 @@
+@import "../common/variables";
+@import "../common/commonBtn";
+@import "../mixins/center";
+@import "../mixins/heading";
+@import "../mixins/paragraph";
+
+// Blog Start
+#blog {
+  padding: 128px 0;
+  .blog__heading {
+    h2 {
+      @include heading(210px, 48px, $semiBold, 64px);
+      padding-bottom: 64px;
+    }
+  }
+  .blog__wrapper {
+    @include center(unset);
+    column-gap: 24px;
+    flex-wrap: wrap;
+    .blog__item {
+      .blog__img {
+        width: 405px;
+        height: 285px;
+        overflow: hidden;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .blog__info {
+        span {
+          @include paragraph(405px, $regular, 16px);
+          line-height: 28px;
+          display: block;
+          padding: 40px 0 16px 0;
+        }
+        h3 {
+          @include heading(405px, 24px, $medium, 36px);
+        }
+        p {
+          padding: 16px 0 32px 0;
+          @include paragraph(405px, $regular, 16px);
+          line-height: 28px;
+        }
+        a {
+          @include commonBtn;
+          color: #282938;
+          i {
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+// Blog End
