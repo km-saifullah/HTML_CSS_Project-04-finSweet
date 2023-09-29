@@ -1,0 +1,71 @@
+@import "../common/variables";
+@import "../common/commonLink";
+@import "../mixins/center";
+@import "../mixins/heading";
+@import "../mixins/paragraph";
+
+// FAQ Start
+#faq {
+  padding: 128px 0;
+  .faq__wrapper {
+    @include center(space-between);
+    align-items: unset;
+    .faq__heading {
+      h2 {
+        @include heading(328px, 38px, $semiBold, 56px);
+      }
+      a {
+        @include commonLink;
+        color: $blue;
+        width: 220px;
+        padding-top: 16px;
+      }
+    }
+    .faq__main {
+      width: 846px;
+      .faq__item {
+        @include center(space-between);
+        align-items: start;
+        border-bottom: 2px solid #ececf1;
+        padding: 32px 0;
+        .faq__info {
+          @include center(unset);
+          align-items: unset;
+          column-gap: 58px;
+          .faq__number {
+            span {
+              @include paragraph(unset, $medium, 24px);
+              line-height: 36px;
+              color: $blue;
+              font-size: 24px;
+            }
+          }
+          .faq__details {
+            h3 {
+              @include heading(816px, 24px, $medium, 36px);
+            }
+            p {
+              @include paragraph(624px, $medium, 18px);
+              line-height: 32px;
+              padding-top: 16px;
+            }
+          }
+        }
+        .faq__icon {
+          i {
+            color: $black;
+            opacity: 0.7;
+            font-size: 24px;
+            cursor: pointer;
+            line-height: 36px;
+          }
+        }
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+}
+// FAQ End
