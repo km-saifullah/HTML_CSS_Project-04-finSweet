@@ -42,7 +42,7 @@
           }
           .faq__details {
             h3 {
-              @include heading(816px, 24px, $medium, 36px);
+              @include heading(512px, 24px, $medium, 36px);
             }
             p {
               @include paragraph(624px, $medium, 18px);

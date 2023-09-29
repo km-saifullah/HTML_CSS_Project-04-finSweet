@@ -1,0 +1,109 @@
+@import "../common/variables";
+@import "../mixins/center";
+@import "../mixins/heading";
+@import "../mixins/paragraph";
+@import "../common/commonBtn";
+@import "../common/commonLink";
+
+// Inquiry Start
+#inquiry {
+  .inquiry__wrapper {
+    @include center(unset);
+    align-items: unset;
+    .inquiry__img {
+      width: 656px;
+      height: 691px;
+      overflow: hidden;
+      position: relative;
+      picture {
+        height: inherit;
+        width: inherit;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .inquiry__img-overlay {
+        background-color: rgba(28, 30, 83, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 96px;
+        h2 {
+          @include heading(464px, 54px, $semiBold, 74px);
+          color: $white;
+          padding-bottom: 24px;
+        }
+        p {
+          @include paragraph(464px, $medium, 16px);
+          line-height: 28px;
+          color: $white;
+        }
+      }
+    }
+    .inquiry__form {
+      width: 624px;
+      height: 691px;
+      background-color: $bannerBGColor;
+      padding: 96px 96px 48px 96px;
+      h4 {
+        @include heading(432px, 32px, $medium, 48px);
+        color: $white;
+        padding-bottom: 16px;
+      }
+      p {
+        @include paragraph(432px, $medium, 16px);
+        line-height: 28px;
+        color: #f4f6fc;
+        padding-bottom: 40px;
+      }
+      form {
+        input {
+          height: 64px;
+          width: 100%;
+          border-radius: 8px;
+          border: 1.5px solid rgba(255, 255, 255, 0.05);
+          background-color: transparent;
+          margin-bottom: 16px;
+          outline: none;
+          padding: 18px 32px;
+          @include paragraph(100%, $regular, 16px);
+          line-height: 28px;
+          color: #f4f6fc;
+        }
+        button {
+          width: 100%;
+          height: 64px;
+          background-color: $yellow;
+          border: none;
+          outline: none;
+          border-radius: 41px;
+          margin-top: 23px;
+          @include paragraph(100%, $semiBold, 18px);
+          line-height: 32px;
+          color: #1b1c2b;
+          cursor: pointer;
+          font-family: "Manrope", sans-serif;
+          margin-bottom: 28px;
+        }
+      }
+      a {
+        color: $white;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+        line-height: 32px;
+        display: block;
+        text-align: center;
+        i {
+          margin-left: 13px;
+        }
+      }
+    }
+  }
+}
+// Inquiry End
